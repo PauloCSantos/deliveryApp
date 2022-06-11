@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# DELIVERY APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sobre o projeto
 
-## Available Scripts
+Aplicação web de um delivery de comida. Com carrinho de compras, autenticação, sessão de frutas e lista dinâmica de items. 
 
-In the project directory, you can run:
+### Explicação do sistema
 
-### `npm start`
+- Na sessão inicial da aplicação contem uma explicação do delivery e exemplos dos produtos do estabelecimento
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- No cabeçalho existe quatro opções que faz a página se direcionar a posição da respectiva sessão(não implementado), contém o carrinho 
+de compras e um icone para realizar a autenticação pelo google autenticador
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- A proxima sessão são das frutas que constam no banco de dados
 
-### `npm test`
+- Por último uma sessão que apresenta opções dos tipos de pratos e quando clicado tras os resultados na tela com informações sobre os produtos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Usuário administrador
 
-### `npm run build`
+- O usuário administrador pode acessar a página de cadastro de produtos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tela inicial
+<img src= "imgs/begin-session.png" alt="Tela inicial" width= "100%" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Menu dropdown
+<img src= "imgs/dropdown-menu.png" alt="Menu Dropdown" width= "100%" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Autenticação Google
+<img src= "imgs/google-auth.png" alt="Autenticação" width= "100%" />
 
-### `npm run eject`
+### Sessão de frutas
+<img src= "imgs/fruits-session.png" alt="Sessão de frutas" width= "100%" />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Sessão de pratos(selecionado pratos com frango)
+<img src= "imgs/dishes-session.png" alt="Home" width= "100%" />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Sessão de pratos(selecionado pratos com arroz)
+<img src= "imgs/dishes-session-2.png" alt="Search" width= "100%" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Carrinho de compras vazio
+<img src= "imgs/empty-cart.png" alt="carrinho vazio" width= "100%" />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Carrinho de compras com produtos
+<img src= "imgs/cart-cart.png" alt="carrinho com produtos" width= "100%" />
 
-## Learn More
+### Cadastro de produtos
+<img src= "imgs/new-product.png" alt="D1" width= "100%" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Cadastro de produtos pronta para o envio
+<img src= "imgs/send-product.png" alt="D2" width= "100%" />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 🚀 Começando
 
-### Code Splitting
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📋 Pré-requisitos
 
-### Analyzing the Bundle Size
+- npm / yarn
+- cadastro no firebase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔧 Instalação
+### :warning::warning: **A pasta images**: é para guardar as imagens usadas no readme.md! Apagar ela depois do clone :warning::warning:
 
-### Making a Progressive Web App
+``` bash
+## firebase
+- cadastrar no firebase
+- habilitar a storage
+- habilitar o autenticador
+- habilitar o firestoredatabase
+- em storage criar um diretório com o nome imagens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## firebase credentials
+- em configurações copie as credenciais fornecidas pelo firebase
 
-### Advanced Configuration
+## clonar repositório
+git clone https://github.com/PauloCSantos/deliveryApp.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## no diretório utils
+- abrir o arquivo firebaseCred.txt
+- trocar o arquivo para .js
+- preencher com as credenciais 
 
-### Deployment
+## entrar na pasta do projeto
+cd deliveryApp
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## instalar as dependencias
+npm i
 
-### `npm run build` fails to minify
+## executar o projeto
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🛠️ Construído com
+
+- ReactJs
+- Firebase
+- Tailwindcss
+- Framer motion
+
+## ✒️ Autor
+
+* **Paulo C Santos** - [Linkedin](https://www.linkedin.com/in/paulocsantos1995/)
+
+## 🖐️ Agradecimento
+
+Agradeço ao canal Vetrivel Ravi pela aula
+
+- Link do canal: https://www.youtube.com/c/VetrivelRavi
